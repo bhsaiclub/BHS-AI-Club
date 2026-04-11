@@ -1,0 +1,46 @@
+{
+  "featuredProjects": [
+    {
+      "badge": "Featured project",
+      "title": "AI Study Buddy",
+      "description": "A student-built assistant that helps generate practice questions, explanations, and revision prompts.",
+      "tags": ["NLP", "Web App", "Education"],
+      "linkText": "Add demo link",
+      "link": "#top"
+    },
+    {
+      "badge": "Featured project",
+      "title": "Campus Vision Helper",
+      "description": "A computer vision concept that explores image classification or object detection for practical school-related use cases.",
+      "tags": ["Computer Vision", "Python", "Prototype"],
+      "linkText": "Add GitHub link",
+      "link": "#top"
+    },
+    {
+      "badge": "Featured project",
+      "title": "Responsible AI Explorer",
+      "description": "An interactive demo or presentation that helps students understand bias, ethics, and real-world implications of AI systems.",
+      "tags": ["Ethics", "Interactive", "Showcase"],
+      "linkText": "Add showcase link",
+      "link": "#top"
+    }
+  ],
+  "history": [
+    {
+      "year": "2026–2027",
+      "projects": [
+        "AI Study Buddy",
+        "Campus Vision Helper",
+        "Responsible AI Explorer"
+      ]
+    },
+    {
+      "year": "2025–2026",
+      "projects": [
+        "Add first-year flagship project",
+        "Add workshop or showcase highlight",
+        "Add outreach or event milestone"
+      ]
+    }
+  ]
+}
