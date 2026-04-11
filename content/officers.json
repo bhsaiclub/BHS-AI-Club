@@ -1,0 +1,50 @@
+{
+  "currentYear": "2026–2027",
+  "currentOfficers": [
+    {
+      "role": "President",
+      "name": "Your Name",
+      "description": "Leads the club vision, programming, and member experience for the school year.",
+      "meta": "Grade 11 · Student leader"
+    },
+    {
+      "role": "Vice President",
+      "name": "Add Name",
+      "description": "Supports events, planning, operations, and helps guide projects and workshops.",
+      "meta": "Grade 10–12 · Leadership team"
+    },
+    {
+      "role": "Projects Lead",
+      "name": "Add Name",
+      "description": "Coordinates project showcases, team collaboration, and technical initiative support.",
+      "meta": "Grade 10–12 · Builder track"
+    },
+    {
+      "role": "Outreach / Media",
+      "name": "Add Name",
+      "description": "Manages communication, club visibility, and social updates like Instagram.",
+      "meta": "Grade 9–12 · Community and outreach"
+    }
+  ],
+  "history": [
+    {
+      "year": "2026–2027",
+      "summary": "Current year · officers and featured projects",
+      "officers": [
+        "President — Your Name",
+        "Vice President — Add Name",
+        "Projects Lead — Add Name",
+        "Outreach / Media — Add Name"
+      ]
+    },
+    {
+      "year": "2025–2026",
+      "summary": "Past leadership and showcase record",
+      "officers": [
+        "Founder — Add Name",
+        "President — Add Name",
+        "Vice President — Add Name"
+      ]
+    }
+  ]
+}
