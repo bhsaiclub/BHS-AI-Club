@@ -290,82 +290,92 @@
     </div>
   </footer>
 
-  <script>
-    const observer = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      ? null
-      : new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add('visible');
-          });
-        }, { threshold: 0.12 });
+<script>
+const observer = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  ? null
+  : new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
 
-    document.querySelectorAll('.reveal').forEach((el) => {
-      if (!observer) el.classList.add('visible');
-      else observer.observe(el);
-    });
+document.querySelectorAll('.reveal').forEach((el) => {
+  if (!observer) el.classList.add('visible');
+  else observer.observe(el);
+});
 
-    async function loadClubData() {
-      try {
-        const [officersRes, projectsRes] = await Promise.all([
-          fetch('./content/officers.json'),
-          fetch('./content/projects.json')
-        ]);
-        const officersData = await officersRes.json();
-        const projectsData = await projectsRes.json();
+async function loadClubData() {
+  try {
+    const [officersRes, projectsRes] = await Promise.all([
+      fetch('./content/officers.json'),
+      fetch('./content/projects.json')
+    ]);
 
-        const officerGrid = document.getElementById('officer-grid');
-        officerGrid.innerHTML = officersData.currentOfficers.map((officer) => `
-          <article class="card officer-card">
-            <span class="role">${officer.role}</span>
-            <h3>${officer.name}</h3>
-            <p>${officer.description}</p>
-            <div class="meta">${officer.meta}</div>
-          </article>
-        `).join('');
-
-        const projectGrid = document.getElementById('project-grid');
-        projectGrid.innerHTML = projectsData.featuredProjects.map((project) => `
-          <article class="card project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-badge">${project.badge}</div>
-                <h3>${project.title}</h3>
-              </div>
-            </div>
-            <p>${project.description}</p>
-            <div class="tag-row">${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}</div>
-            <a class="project-link" href="${project.link}">${project.linkText} →</a>
-          </article>
-        `).join('');
-
-        const projectsByYear = new Map(projectsData.history.map((entry) => [entry.year, entry.projects]));
-        const archiveList = document.getElementById('archive-list');
-        archiveList.innerHTML = officersData.history.map((entry, index) => `
-          <details ${index === 0 ? 'open' : ''}>
-            <summary>
-              <span>${entry.year}</span>
-              <span class="summary-meta">${entry.summary}</span>
-            </summary>
-            <div class="archive-body">
-              <div class="archive-columns">
-                <div class="archive-block">
-                  <h3>Leadership</h3>
-                  <ul>${entry.officers.map((item) => `<li>${item}</li>`).join('')}</ul>
-                </div>
-                <div class="archive-block">
-                  <h3>Projects</h3>
-                  <ul>${(projectsByYear.get(entry.year) || []).map((item) => `<li>${item}</li>`).join('')}</ul>
-                </div>
-              </div>
-            </div>
-          </details>
-        `).join('');
-      } catch (error) {
-        console.error('Failed to load club data', error);
-      }
+    if (!officersRes.ok || !projectsRes.ok) {
+      throw new Error('Failed to fetch JSON files');
     }
 
-    loadClubData();
-  </script>
+    const officersData = await officersRes.json();
+    const projectsData = await projectsRes.json();
+
+    const officerGrid = document.getElementById('officer-grid');
+    officerGrid.innerHTML = officersData.currentOfficers.map((officer) => `
+      <article class="card officer-card">
+        <span class="role">${officer.role}</span>
+        <h3>${officer.name}</h3>
+        <p>${officer.description}</p>
+        <div class="meta">${officer.meta}</div>
+      </article>
+    `).join('');
+
+    const projectGrid = document.getElementById('project-grid');
+    projectGrid.innerHTML = projectsData.featuredProjects.map((project) => `
+      <article class="card project-card">
+        <div class="project-top">
+          <div>
+            <div class="project-badge">${project.badge}</div>
+            <h3>${project.title}</h3>
+          </div>
+        </div>
+        <p>${project.description}</p>
+        <div class="tag-row">
+          ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join('')}
+        </div>
+        <a class="project-link" href="${project.link}">${project.linkText} →</a>
+      </article>
+    `).join('');
+
+    const projectsByYear = new Map(
+      projectsData.history.map((entry) => [entry.year, entry.projects])
+    );
+
+    const archiveList = document.getElementById('archive-list');
+    archiveList.innerHTML = officersData.history.map((entry, index) => `
+      <details ${index === 0 ? 'open' : ''}>
+        <summary>
+          <span>${entry.year}</span>
+          <span class="summary-meta">${entry.summary}</span>
+        </summary>
+        <div class="archive-body">
+          <div class="archive-columns">
+            <div class="archive-block">
+              <h3>Leadership</h3>
+              <ul>${entry.officers.map((item) => `<li>${item}</li>`).join('')}</ul>
+            </div>
+            <div class="archive-block">
+              <h3>Projects</h3>
+              <ul>${(projectsByYear.get(entry.year) || []).map((item) => `<li>${item}</li>`).join('')}</ul>
+            </div>
+          </div>
+        </div>
+      </details>
+    `).join('');
+  } catch (error) {
+    console.error('Failed to load club data', error);
+  }
+}
+
+loadClubData();
+</script>
 </body>
 </html>
