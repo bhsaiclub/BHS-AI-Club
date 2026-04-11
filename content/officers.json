@@ -5,25 +5,31 @@
       "role": "President & Founder",
       "name": "Srikar Karri",
       "description": "Leads the club vision, programming, innovation and member experience.",
-      "meta": "Grade 11 · Student leader"
+      "meta": "Grade 9 · Student leader"
     },
     {
       "role": "Secretaries",
       "name": "Advaith Cheri & Adyaan Asadullah",
       "description": "Keeps the club organized, connected, and running seamlessly.",
-      "meta": "Grade 9 · Leadership team"
+      "meta": "Grade 9 · Administration"
     },
     {
       "role": "Social Media Managers",
       "name": "Prisha Chakote & Adhrit Pantham",
       "description": "Spreads our mission online, one post at a time.",
-      "meta": "Grade 9 · Social track"
+      "meta": "Grade 9 · Social"
     },
     {
       "role": "Treasurers",
       "name": "Sophie Shan & Akash Selvakumar",
       "description": "Manages club funds and supports planning.",
-      "meta": "Grade 9–12 · Community and outreach"
+      "meta": "Grade 9 · Finance"
+    },
+    {
+      "role": "Outreach Managers",
+      "name": "Sasha Parekh & Sawayne Y",
+      "description": "Expands the AI club's reach.",
+      "meta": "Grade 9 · Outreach"
     }
   ],
   "history": [
@@ -34,7 +40,8 @@
         "Founder & President — Srikar Karri",
         "Secretaries — Advaith Cheri & Adyaan Asadullah",
         "Social Media Managers — Prisha Chakote & Adhrit Pantham",
-        "Treasurers — Sophie Shan & Akash Selvakumar"
+        "Treasurers — Sophie Shan & Akash Selvakumar",
+        "Outreach Managers — Sasha Parekh & Sawayne Y" 
       ]
     }
   ]
