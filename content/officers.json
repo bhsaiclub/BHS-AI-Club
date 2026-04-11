@@ -1,49 +1,48 @@
 {
-  "currentYear": "2026–2027",
+  "currentYear": "2025–2026",
   "currentOfficers": [
     {
-      "role": "President",
-      "name": "Your Name",
-      "description": "Leads the club vision, programming, and member experience for the school year.",
+      "role": "President & Founder",
+      "name": "Srikar Karri",
+      "description": "Leads the club vision, programming, innovation and member experience.",
       "meta": "Grade 11 · Student leader"
     },
     {
-      "role": "Vice President",
-      "name": "Add Name",
-      "description": "Supports events, planning, operations, and helps guide projects and workshops.",
-      "meta": "Grade 10–12 · Leadership team"
+      "role": "Secretaries",
+      "name": "Advaith Cheri & Adyaan Asadullah",
+      "description": "Keeps the club organized, connected, and running seamlessly.",
+      "meta": "Grade 9 · Leadership team"
     },
     {
-      "role": "Projects Lead",
-      "name": "Add Name",
-      "description": "Coordinates project showcases, team collaboration, and technical initiative support.",
-      "meta": "Grade 10–12 · Builder track"
+      "role": "Social Media Managers",
+      "name": "Prisha Chakote & Adhrit Pantham",
+      "description": "Spreads our mission online, one post at a time.",
+      "meta": "Grade 9 · Social track"
     },
     {
-      "role": "Outreach / Media",
-      "name": "Add Name",
-      "description": "Manages communication, club visibility, and social updates like Instagram.",
+      "role": "Treasures",
+      "name": "Sophie Shan & Akash Selvakumar",
+      "description": "Manages our funds.",
       "meta": "Grade 9–12 · Community and outreach"
     }
   ],
   "history": [
     {
-      "year": "2026–2027",
+      "year": "2025–2026",
       "summary": "Current year · officers and featured projects",
       "officers": [
-        "President — Your Name",
-        "Vice President — Add Name",
-        "Projects Lead — Add Name",
-        "Outreach / Media — Add Name"
+        "President — Srikar Karri",
+        "Secretaries — Advaith Cheri & Adyaan Asadullah",
+        "Social Media Managers — Prisha Chakote & Adhrit Pantham",
+        "Treasures — Sophie Shan & Akash Selvakumar"
       ]
     },
     {
       "year": "2025–2026",
       "summary": "Past leadership and showcase record",
       "officers": [
-        "Founder — Add Name",
-        "President — Add Name",
-        "Vice President — Add Name"
+        "Founder — Srikar Karri",
+        "President — Srikar Karri",
       ]
     }
   ]
