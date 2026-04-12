@@ -2,10 +2,10 @@
   "featuredProjects": [
     {
       "badge": "Featured project",
-      "title": "AI Study Buddy",
-      "description": "A student-built assistant that helps generate practice questions, explanations, and revision prompts.",
-      "tags": ["NLP", "Web App", "Education"],
-      "linkText": "Add demo link",
+      "title": "My Path",
+      "description": "An AI- powered app to explore course pathways, discover your best-fit endorsement, and get instant answers to all your high school planning questions",
+      "tags": ["AI", "Web App", "Education"],
+      "linkText": "GitHub link",
       "link": "#top"
     },
     {
@@ -13,7 +13,7 @@
       "title": "Campus Vision Helper",
       "description": "A computer vision concept that explores image classification or object detection for practical school-related use cases.",
       "tags": ["Computer Vision", "Python", "Prototype"],
-      "linkText": "Add GitHub link",
+      "linkText": "Demo link",
       "link": "#top"
     },
     {
@@ -21,7 +21,7 @@
       "title": "Responsible AI Explorer",
       "description": "An interactive demo or presentation that helps students understand bias, ethics, and real-world implications of AI systems.",
       "tags": ["Ethics", "Interactive", "Showcase"],
-      "linkText": "Add showcase link",
+      "linkText": "Showcase link",
       "link": "#top"
     }
   ],
@@ -29,7 +29,7 @@
     {
       "year": "2025–2026",
       "projects": [
-        "AI Study Buddy",
+        "My Path - An AI- powered app to explore course pathways, discover your best-fit endorsement, and get instant answers to all your high school planning questions",
         "Campus Vision Helper",
         "Responsible AI Explorer"
       ]
