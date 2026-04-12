@@ -10,17 +10,17 @@
     },
     {
       "badge": "Featured project",
-      "title": "Campus Vision Helper",
-      "description": "A computer vision concept that explores image classification or object detection for practical school-related use cases.",
-      "tags": ["Computer Vision", "Python", "Prototype"],
+      "title": "Missing Work Tracker",
+      "description": "A web app that helps students to stay on track with their homework.",
+      "tags": ["Education", "Tracking", "Web App"],
       "linkText": "Demo link",
       "link": "#top"
     },
     {
       "badge": "Featured project",
-      "title": "Responsible AI Explorer",
-      "description": "An interactive demo or presentation that helps students understand bias, ethics, and real-world implications of AI systems.",
-      "tags": ["Ethics", "Interactive", "Showcase"],
+      "title": "Helping people with learning difficulties",
+      "description": "A web app that helps people with learning difficulties.",
+      "tags": ["Web App", "Community", "Education"],
       "linkText": "Showcase link",
       "link": "#top"
     }
@@ -30,8 +30,8 @@
       "year": "2025–2026",
       "projects": [
         "My Path - An AI- powered app to explore course pathways, discover your best-fit endorsement, and get instant answers to all your high school planning questions",
-        "Campus Vision Helper",
-        "Responsible AI Explorer"
+        "Missing Work Tracker - A web app that helps students to stay on track with their homework.",
+        "Helping people with learning difficulties - A web app that helps people with learning difficulties."
       ]
     }
   ]
